@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pitch Partner</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+</head>
+<body>
+  <header class="nav">
+    <a href="#" class="brand" aria-label="Pitch Partner inicio">
+      <span class="brand-logo" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 5.5A2.5 2.5 0 0 1 6.5 3h7A2.5 2.5 0 0 1 16 5.5V11a2.5 2.5 0 0 1-2.5 2.5H10l-3 3v-3h-.5A2.5 2.5 0 0 1 4 11V5.5Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+          <path d="M8 10.5A2.5 2.5 0 0 1 10.5 8h7A2.5 2.5 0 0 1 20 10.5V16a2.5 2.5 0 0 1-2.5 2.5H14l-3 3v-3h-.5A2.5 2.5 0 0 1 8 16v-5.5Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" fill="currentColor"/>
+        </svg>
+      </span>
+    </a>
+    <nav class="nav-actions">
+      <button type="button" class="btn btn-ghost" data-nav-tab="signup">Inscribirse</button>
+      <button type="button" class="btn btn-primary" data-nav-tab="login">Iniciar sesión</button>
+    </nav>
+  </header>
+
+  <main class="main">
+    <section class="auth-card" aria-labelledby="auth-title">
+      <div class="auth-header">
+        <span class="brand-logo brand-logo-lg" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 5.5A2.5 2.5 0 0 1 6.5 3h7A2.5 2.5 0 0 1 16 5.5V11a2.5 2.5 0 0 1-2.5 2.5H10l-3 3v-3h-.5A2.5 2.5 0 0 1 4 11V5.5Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+            <path d="M8 10.5A2.5 2.5 0 0 1 10.5 8h7A2.5 2.5 0 0 1 20 10.5V16a2.5 2.5 0 0 1-2.5 2.5H14l-3 3v-3h-.5A2.5 2.5 0 0 1 8 16v-5.5Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" fill="currentColor"/>
+          </svg>
+        </span>
+        <div class="auth-header-text">
+          <h1 id="auth-title" class="auth-title" data-title>Bienvenido de nuevo</h1>
+          <p class="auth-subtitle" data-subtitle>Inicia sesión para continuar</p>
+        </div>
+      </div>
+
+      <div class="tabs" role="tablist" aria-label="Elige una opción">
+        <button type="button" class="tab" role="tab" data-tab="signup" aria-selected="false">Inscribirse</button>
+        <button type="button" class="tab is-active" role="tab" data-tab="login" aria-selected="true">Iniciar sesión</button>
+      </div>
+
+      <form class="form" data-form="login" autocomplete="on" novalidate>
+        <div class="field">
+          <label for="login-email">Correo electrónico</label>
+          <div class="input">
+            <span class="input-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="5" width="18" height="14" rx="2.5" stroke="currentColor" stroke-width="1.6"/><path d="m4 7 8 6 8-6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <input id="login-email" name="email" type="email" placeholder="tú@ejemplo.com" required autocomplete="email" inputmode="email" />
+            <span class="input-icon input-icon-trailing" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 8V6a2 2 0 0 1 2-2h2M20 8V6a2 2 0 0 0-2-2h-2M4 16v2a2 2 0 0 0 2 2h2M20 16v2a2 2 0 0 1-2 2h-2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><circle cx="12" cy="12" r="3.2" stroke="currentColor" stroke-width="1.6"/></svg>
+            </span>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="login-password">Contraseña</label>
+          <div class="input">
+            <span class="input-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="4" y="10" width="16" height="10" rx="2.5" stroke="currentColor" stroke-width="1.6"/><path d="M8 10V7a4 4 0 1 1 8 0v3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+            </span>
+            <input id="login-password" name="password" type="password" placeholder="••••••••" required autocomplete="current-password" minlength="6" />
+            <button type="button" class="input-icon input-icon-trailing toggle-pass" aria-label="Mostrar contraseña" data-toggle-pass="login-password">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 12s3.5-7 9.5-7 9.5 7 9.5 7-3.5 7-9.5 7-9.5-7-9.5-7Z" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.6"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block">Iniciar sesión</button>
+
+        <p class="form-footer">¿No tienes una cuenta? <a href="#" class="link" data-switch-to="signup">Inscribirse</a></p>
+      </form>
+
+      <form class="form" data-form="signup" autocomplete="on" novalidate hidden>
+        <div class="field">
+          <label for="signup-name">Nombre completo</label>
+          <div class="input">
+            <span class="input-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="1.6"/><path d="M4 20c1.5-3.5 4.5-5 8-5s6.5 1.5 8 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+            </span>
+            <input id="signup-name" name="name" type="text" placeholder="Tu nombre" required autocomplete="name" />
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="signup-email">Correo electrónico</label>
+          <div class="input">
+            <span class="input-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="5" width="18" height="14" rx="2.5" stroke="currentColor" stroke-width="1.6"/><path d="m4 7 8 6 8-6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <input id="signup-email" name="email" type="email" placeholder="tú@ejemplo.com" required autocomplete="email" inputmode="email" />
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="signup-password">Contraseña</label>
+          <div class="input">
+            <span class="input-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="4" y="10" width="16" height="10" rx="2.5" stroke="currentColor" stroke-width="1.6"/><path d="M8 10V7a4 4 0 1 1 8 0v3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+            </span>
+            <input id="signup-password" name="password" type="password" placeholder="Mínimo 8 caracteres" required autocomplete="new-password" minlength="8" />
+            <button type="button" class="input-icon input-icon-trailing toggle-pass" aria-label="Mostrar contraseña" data-toggle-pass="signup-password">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 12s3.5-7 9.5-7 9.5 7 9.5 7-3.5 7-9.5 7-9.5-7-9.5-7Z" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.6"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block">Crear cuenta</button>
+
+        <p class="form-footer">¿Ya tienes una cuenta? <a href="#" class="link" data-switch-to="login">Iniciar sesión</a></p>
+      </form>
+
+      <div class="toast" data-toast role="status" aria-live="polite" hidden></div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
