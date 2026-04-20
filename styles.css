@@ -200,6 +200,8 @@ body {
   gap: 16px;
 }
 
+.form[hidden] { display: none; }
+
 .field {
   display: flex;
   flex-direction: column;
