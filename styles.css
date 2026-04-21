@@ -69,11 +69,6 @@ body {
 }
 .brand-logo-lg svg { width: 30px; height: 30px; }
 
-.nav-actions {
-  display: flex;
-  gap: 10px;
-}
-
 /* Buttons */
 .btn {
   appearance: none;
@@ -308,7 +303,6 @@ button.input-icon-trailing:hover { color: var(--ink-900); }
 /* Mobile */
 @media (max-width: 520px) {
   .nav { padding: 14px 16px; }
-  .nav-actions .btn { padding: 9px 14px; font-size: 13px; }
   .main { padding: 16px 16px 40px; }
   .auth-card {
     padding: 24px 20px;
