@@ -102,6 +102,19 @@ body {
 }
 .btn-primary:hover { background: #b8f277; }
 
+.btn-google {
+  background: var(--brand-white);
+  color: var(--ink-900);
+  border: 1px solid var(--line);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.btn-google:hover { background: var(--brand-mint); }
+.google-icon { display: inline-flex; width: 20px; height: 20px; }
+.google-icon svg { width: 100%; height: 100%; }
+
 .btn-block {
   display: block;
   width: 100%;
@@ -273,6 +286,24 @@ button.input-icon-trailing {
 button.input-icon-trailing:hover { color: var(--ink-900); }
 
 .input input[type="email"] + .input-icon-trailing { pointer-events: none; }
+
+.divider {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--ink-300);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: var(--line);
+}
+.divider span { color: var(--ink-500); }
 
 .form-footer {
   margin: 4px 0 0;

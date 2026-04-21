@@ -69,6 +69,17 @@
     toast.textContent = '';
   }
 
+  document.querySelectorAll('[data-google]').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const mode = btn.dataset.google;
+      showToast(
+        mode === 'login'
+          ? 'Conectando con Google…'
+          : 'Creando cuenta con Google…'
+      );
+    });
+  });
+
   forms.forEach((form) => {
     form.addEventListener('submit', (e) => {
       e.preventDefault();
